@@ -13,12 +13,12 @@
     <div class="container">
         <div class="row my-5">
             <div class="col-12">
-                <form name="myForm" class="form-group" onsubmit="return validateForm()">
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter name">
+                <form name="userForm" class="form-group" onsubmit="return validateForm()">
+                    <input type="text" class="form-control" id="firstname" name="firstname" placeholder="Enter name">
                     <input type="text" class="form-control my-3" id="surname" name="surname" placeholder="Enter surname">
                     <input type="text" class="form-control" id="birthday" name="birthday" placeholder="Enter birthday">
-                    <div class="small"></div>
-                    <input type="email" class="form-control my-3" id="email" name="email" placeholder="Enter email">
+                    <div class="small">Birthday format should be like that: yyyy-mm-dd </div>
+                    <input type="text" class="form-control my-3" id="email" name="email" placeholder="Enter email">
                     <input type="submit" class="btn btn-primary" value="Submit">
                 </form>
             </div>
@@ -31,33 +31,25 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-7">
-                <button class="btn btn-outline-info mx-1" onclick="sortByID()">ID</button>
-                <button class="btn btn-outline-info mx-1" onclick="sortByName()">Name</button>
+            <div class="col-12">
+                <p>Sort by List</p>
+                <button class="btn btn-outline-info " onclick="sortByID()">ID</button>
+                <button class="btn btn-outline-info " onclick="sortByName()">Name</button>
                 <button class="btn btn-outline-info" onclick="sortBysurname()">Surname</button>
             </div>
-        </div>
-        <div class="row my-5">
-            <div class="col-12">
-                <div id="myDiv">
-
-                </div>
+            <div class="col-12 mt-2">
+                <ul class="list-group">
+                    
+                </ul>
             </div>
         </div>
-        <div id="list">
-            <ul class='list-group'>
-                <li>
-
-                </li>
-            </ul>
-        </div>
-    </div>
+        
 
 
 
 
 
-    <script src="js/script.js"></script>
+    <script src="script2.js"></script>
 </body>
 
 </html>
